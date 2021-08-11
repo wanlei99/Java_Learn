@@ -96,4 +96,8 @@ public class ReadFromFile {
         reader.close();
 
     }
+
+    public static void main(String[] args) {
+
+    }
 }
