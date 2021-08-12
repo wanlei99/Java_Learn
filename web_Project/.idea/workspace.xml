@@ -10,6 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed0e3964-6980-4337-b598-505281c00638" name="默认变更列表" comment="web项目">
+      <change beforePath="$PROJECT_DIR$/../test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +158,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628750615330</updated>
-      <workItem from="1628750617870" duration="2660000" />
+      <workItem from="1628750617870" duration="3292000" />
     </task>
     <task id="LOCAL-00001" summary="web项目">
       <created>1628752554628</created>
