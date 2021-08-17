@@ -1,4 +1,7 @@
+import com.wl.pojo.Cat;
+import com.wl.pojo.Person;
 import com.wl.pojo.Student;
+import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -11,8 +14,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class MyTest {
     private static Student student;
-
-    public static void main(String[] args) {
+    @Test
+    public void Test1() {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
         student =(Student) context.getBean("Student");
         System.out.println(student.toString());
@@ -30,5 +33,18 @@ public class MyTest {
          * wife='null',
          * info={user=admin, password=1qaz, url=www.baidu.com, driver=2312312131}}
          */
+    }
+    @Test
+    public void Test2(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("personBeans.xml");
+        Person person = (Person) context.getBean("Person");
+        person.getDog().shut();
+        person.getCat().shut();
+        System.out.println(person.toString());
+    }
+    @Test
+    public void test3(){
+        System.out.println("hello");
+        Person person = new Person();
     }
 }
