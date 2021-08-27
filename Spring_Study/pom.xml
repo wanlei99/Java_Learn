@@ -11,6 +11,7 @@
     <modules>
         <module>IOC_study</module>
         <module>Spring_study2</module>
+        <module>proxy</module>
     </modules>
 
     <properties>
