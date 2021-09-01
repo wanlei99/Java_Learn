@@ -30,6 +30,7 @@ public class Demo {
         director.constructSportsCar(builder);
         Car car = builder.getResult();
         System.out.println("Car built:\n"+car.getCarType());
+
         CarManualBuilder manualBuilder = new CarManualBuilder();
         director.constructSportsCar(manualBuilder);
         Manual manual = manualBuilder.getResult();
