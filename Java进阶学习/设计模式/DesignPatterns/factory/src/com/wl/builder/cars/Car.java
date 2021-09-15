@@ -4,7 +4,6 @@ import com.wl.builder.components.Engine;
 import com.wl.builder.components.GPSNavigator;
 import com.wl.builder.components.Transmission;
 import com.wl.builder.components.TripComputer;
-import org.omg.IOP.ENCODING_CDR_ENCAPS;
 
 /**
  * @Author Mr_wan
@@ -31,6 +30,18 @@ public class Car {
     }
 
 
+    /**
+     *
+     * @author yingfeng
+     * @date 2021/9/13 17:14
+     * @param carType 类型
+     * @param engine
+     * @param seats
+     * @param transmission
+     * @param tripComputer
+     * @param gpsNavigator
+
+     */
     public Car(CarType carType,Engine engine,int seats,Transmission transmission,TripComputer tripComputer,GPSNavigator gpsNavigator){
         this.carType = carType;
         this.engine = engine;
@@ -43,6 +54,12 @@ public class Car {
         this.gpsNavigator = gpsNavigator;
     }
 
+    /**
+     *
+     * @author wl
+     * @date 2021/9/13 17:27
+     * @return CarType
+     */
     public CarType getCarType() {
         return carType;
     }

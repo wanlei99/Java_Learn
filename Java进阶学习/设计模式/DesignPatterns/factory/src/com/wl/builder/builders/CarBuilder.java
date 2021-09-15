@@ -50,6 +50,12 @@ public class CarBuilder implements Builder{
     public void setGPSNavigator(GPSNavigator gpsNavigator) {
         this.gpsNavigator = gpsNavigator;
     }
+    /**
+     *
+     * @author wl
+     * @date 2021/9/13 17:1
+     * @return Car
+     */
     public Car getResult() {
         return new Car(carType, engine, seat, transmission, tripComputer, gpsNavigator);
     }

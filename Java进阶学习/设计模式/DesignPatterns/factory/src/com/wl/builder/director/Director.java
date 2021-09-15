@@ -15,10 +15,12 @@ import com.wl.builder.components.TripComputer;
  * @return $
  */
 public class Director {
-    /**
-     * 构造运动类型的车辆
-     * @param builder
-     */
+   /**
+    * 构造城市类型得车辆
+    * @author wl
+    * @date 2021/9/13 17:24
+    * @param builder 构造
+    */
     public void constructSportsCar(Builder builder){
         builder.setCartype(CarType.SPORT_CAR);
         builder.setEngine(new Engine(3.0,0));
