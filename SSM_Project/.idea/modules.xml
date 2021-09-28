@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/parent_common/api/api.iml" filepath="$PROJECT_DIR$/parent_common/api/api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent_common/dao/dao.iml" filepath="$PROJECT_DIR$/parent_common/dao/dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent_common/manager/manager.iml" filepath="$PROJECT_DIR$/parent_common/manager/manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent_common/model/model.iml" filepath="$PROJECT_DIR$/parent_common/model/model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent_common/parent_common.iml" filepath="$PROJECT_DIR$/parent_common/parent_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent_common/service/service.iml" filepath="$PROJECT_DIR$/parent_common/service/service.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/mvc
+						http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+						http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+						http://www.springframework.org/schema/context
+          				http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+
+    <!-- 1、配置注解驱动：识别注解标志
+    spring提供的注解比如@Component @Service @Controller @Repository
+    在SpringMVC中能够将带有该注解的类扫描给Spring容器进行管理
+    但是要想SpringMVC实现更加完成的功能，SpringMVC又封装自身的注解比如@RequestMapping @GetMapping .....
+    -->
+    <mvc:annotation-driven></mvc:annotation-driven>
+
+    <!-- 2、配置包扫描
+    将带有@Component @Service @Controller @Repository这些注解的类交给Spring容器进行管理
+        base-package：基于哪个包进行扫描，扫描根包所有子包都会被扫描
+    -->
+    <context:component-scan
+            base-package="com.wl.controller"></context:component-scan>
+
+    <!-- 3、内部资源视图解析器
+        最终实现把页面的正确路径进行拼接
+        /WEB-INF/jsp/   login（返回的视图名）   .jsp
+    -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/jsp/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
+
+</beans>
